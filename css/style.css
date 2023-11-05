@@ -93,7 +93,7 @@ p {
 		width: 100%;
 	}
 	.heart_container {
-		left: 55%;
+		left: 60%;
 	}
 	.heart {
     	width: 200px;
@@ -117,12 +117,12 @@ p {
 		text-align: center;
 	}
 	.main {
-    	top: 49.5%;
+    	top: 48.5%;
 		width: 70%;
 	}
 	h1 {
 		width: 100%;
-    	top: 27.5%;
+    	top: 30%;
 		font-size: 28px;
 	}
 	p {
