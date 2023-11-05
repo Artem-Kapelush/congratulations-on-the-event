@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+.wrapper {
+	font-weight: 400;
+	width: 80%;
+	margin: 0 auto;
+	transition: all 5s ease;
+}
+.main {
+	width: 27.5%;	
+	height: 200px;
+	position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+h1 {
+	z-index: 2;
+	position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 32px;
+	text-align: center;
+	color: #fff;
+}
+p {
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+}
+.heart_container {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+.heart {
+    width: 275px;
+    height: 275px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: relative;
+    animation: heart 2s infinite;
+	transition: all 1s ease;
+}
+.heart::before,
+.heart::after {
+    width: 275px;
+    height: 275px;
+    content : ''; 
+    display: block;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+.heart::before {
+    top: -135px;
+    left: 0;
+}
+.heart::after {
+    top: 0;
+    left: -135px;
+}
+.heart:hover {
+	scale: 1.2;
+	transition: all 1s ease;
+}
+@keyframes heart{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@media screen and (max-width: 375px) {
+	.wrapper {
+		width: 100%;
+	}
+	.heart {
+    	width: 200px;
+    	height: 200px;
+	}
+	.heart::before,
+	.heart::after {
+	    width: 200px;
+	    height: 200px;
+	}
+	.heart::before {
+	    top: -95px;
+	    left: 0;
+	}
+	.heart::after {
+	    top: 0;
+	    left: -95px;
+	}
+	.header {
+		width: 100%;
+		text-align: center;
+	}
+	.main {
+    	top: 49.5%;
+		width: 70%;
+	}
+	h1 {
+		width: 100%;
+    	top: 27.5%;
+		font-size: 28px;
+	}
+	p {
+		font-size: 14px;
+	}
+}	
