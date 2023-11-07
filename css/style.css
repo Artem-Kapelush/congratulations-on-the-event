@@ -93,16 +93,16 @@ p {
 		width: 100%;
 	}
 	.heart_container {
-		left: 52.5%;
+		left: 55%;
 	}
 	.heart {
-    	width: 200px;
-    	height: 200px;
+    	width: 225px;
+    	height: 225px;
 	}
 	.heart::before,
 	.heart::after {
-	    width: 200px;
-	    height: 200px;
+	    width: 225px;
+	    height: 225px;
 	}
 	.heart::before {
 	    top: -95px;
@@ -119,7 +119,7 @@ p {
 	.main {
     	top: 48.5%;
 		width: 70%;
-		left: 52.5%;
+		left: 57.5%;
 	}
 	h1 {
 		width: 100%;
